@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Welcome from "./pages/Welcome";
 import Products from "./pages/Products";
 import MainHeader from "./components/MainHeader";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/welcome" element={<Welcome />}></Route>
         <Route path="/products" element={<Products />}></Route>
+        <Route path="/products/detail/:productId" element={<ProductDetail />}></Route>
       </Routes>
     </>
   );
