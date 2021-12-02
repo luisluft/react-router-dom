@@ -10,6 +10,9 @@ function App() {
       <MainHeader />
       <Routes>
         <Route path="/welcome" element={<Welcome />}></Route>
+        <Route
+          path="/welcome/new-user"
+          element={<p>Welcome, new user!</p>}></Route>
         <Route path="/products" element={<Products />}></Route>
         <Route path="/products/:productId" element={<ProductDetail />}></Route>
       </Routes>
